@@ -9,7 +9,7 @@
 import React from 'react'
 
 const Title = React.createClass({
-    render: () => React.createElement('h1', null, 'Título')
+    render: () => <h1>Título</h1>
 })
 
 export default Title
