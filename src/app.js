@@ -6,10 +6,18 @@
 
 // module.exports = Title
 
+// import React from 'react'
+
+// const Title = React.createClass({
+//     render: () => <h1>Título novo</h1>
+// })
+
+// export default Title
+
 import React from 'react'
 
-const Title = React.createClass({
-    render: () => <h1>Título</h1>
+const App = React.createClass({
+    render: () => <h1>App</h1>
 })
 
-export default Title
+export default App
