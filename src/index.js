@@ -1,5 +1,3 @@
-'use strict'
-
 // const ReactDOM = require('react-dom')
 // const React = require('react')
 // const Title = require('./app')
