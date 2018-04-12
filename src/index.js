@@ -3,8 +3,8 @@
 // const Title = require('./app')
 
 // ReactDOM.render(
-//     React.createElement(Title), 
-//     document.querySelector('[data-js="app"]')
+//   React.createElement(Title),
+//   document.querySelector('[data-js="app"]')
 // )
 
 import App from './app'
@@ -13,23 +13,22 @@ import React from 'react'
 // With short handler notation
 import { render } from 'react-dom'
 import { AppContainer } from 'react-hot-loader'
-import { INSPECT_MAX_BYTES } from 'buffer';
 
 const renderApp = (NextApp) => {
-    render(
-        <AppContainer>
-            <NextApp />
-        </AppContainer>,
-        document.querySelector('[data-js="app"]')
-    )
+  render(
+    <AppContainer>
+      <NextApp />
+    </AppContainer>,
+    document.querySelector('[data-js="app"]')
+  )
 }
 
 renderApp(App)
 
 if (module.hot) {
-    module.hot.accept('./app', () => {
-        const NextApp = require('./app').default
+  module.hot.accept('./app', () => {
+    const NextApp = require('./app').default
 
-        renderApp(NextApp)
-    })
+    renderApp(NextApp)
+  })
 }
