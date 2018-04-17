@@ -8,5 +8,5 @@ npm install -g webpack@1 webpack-dev-server@1
 
 ```
 npm install
-npm run server
+npm start
 ```
